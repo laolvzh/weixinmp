@@ -11,7 +11,7 @@ Hello, 世界
 
 获取`weixinmp`包
 
-	go get -u github.com/sidbusy/weixinmp
+	go get -u github.com/laolvzh/weixinmp
 
 
 创建`server.go`
