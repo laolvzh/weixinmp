@@ -40,6 +40,14 @@ type Request struct {
 	Latitude  float64
 	Longitude float64
 	Precision float64
+	//新版本增加
+	ScanType string  `xml:"ScanCodeInfo>ScanType"`
+	ScanResult string  `xml:"ScanCodeInfo>ScanResult"`
+}
+
+type ScanCodeInfo struct {
+	ScanType string
+	ScanResult string
 }
 
 // validate request

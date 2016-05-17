@@ -515,6 +515,7 @@ func (this *Weixinmp) CreateCustomMenu(btn *[]Button) error {
 	if err != nil {
 		return err
 	}
+	data = bytes.Replace(data, []byte("\\u0026"), []byte("&"), -1)
 	buf := bytes.NewBuffer(data)
 	url := fmt.Sprintf("%smenu/create?access_token=", UrlPrefix)
 	// retry
